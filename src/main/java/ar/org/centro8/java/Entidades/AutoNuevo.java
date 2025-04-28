@@ -12,7 +12,7 @@ package ar.org.centro8.java.Entidades;
 public class AutoNuevo extends Vehiculo {
     public AutoNuevo(String marca, String modelo,String color ,Radio radio) {
         super(marca, modelo,color);
-        // se hace una validacion de radio,se asegura que se pase una radio y que no este asignada a otro vehiculo
+        
         if (radio != null && radio.getVehiculo() == null) {
             this.agregarRadio(radio);
         } else {
